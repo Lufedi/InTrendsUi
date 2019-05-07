@@ -8,6 +8,7 @@
     "express": "^4.16.4",
     "global": "^4.3.2",
     "moment": "^2.24.0",
+    "path": "^0.12.7",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "2.1.8",
@@ -27,10 +28,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
-    ,
-"engines":{
-    "node":"12.1.0"
-}
-
+  ],
+  "engines": {
+    "node": "12.1.0"
+  }
 }
