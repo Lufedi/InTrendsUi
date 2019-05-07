@@ -28,4 +28,9 @@
     "not ie <= 11",
     "not op_mini all"
   ]
+    ,
+"engines":{
+    "node":"12.1.0"
+}
+
 }
