@@ -126,7 +126,7 @@ class MainPage extends Component {
       if (res.status == 200) {
         jobs = res.data
       }
-      jobs = jobs.slice(-100)
+      jobs = jobs.slice(-40)
       const chartData = jobs.map(job => ({
         value: job.total,
         time: moment(job.created_at).toDate().getTime()
@@ -190,7 +190,8 @@ class MainPage extends Component {
     const {
       terms,
       termsMultiple,
-      jobs
+	jobs,
+	lastUpdate
     } = this.state
     return (
       <div>
@@ -247,8 +248,9 @@ class MainPage extends Component {
 
             <Tooltip cursor={{ strokeDasharray: '3 3' }} formatter={this.formatTooltip} />
 
-          </ScatterChart>
-        </ResponsiveContainer>
+        </ScatterChart>
+            </ResponsiveContainer>
+	    
       </div>
 
     )
